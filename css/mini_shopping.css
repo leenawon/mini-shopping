@@ -1,0 +1,118 @@
+:root {
+  /* colors */
+  --color-indigo: #e8eaf6;
+  --color-yellow: #fff176;
+  --color-pink: #ffccbc;
+  --color-blue: #90caf9;
+  --color-gray: #e0e0e0;
+  --font-color: #424242;
+
+  /* size */
+  --logo-size: 150px;
+  --button-size: 55px;
+  --item-size: 50px;
+  --font-size: 16px;
+  --space: 7px;
+  --border-radius: 10px;
+
+  /* animation */
+  --animation-duration: 200ms;
+}
+
+/* body */
+
+body {
+  height: 100vh;
+  background-color: var(--color-indigo);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+button {
+  font-family: "Yusei Magic", sans-serif;
+  color: var(--font-color);
+}
+
+/* logo */
+
+.shop_logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  cursor: pointer;
+  transition: transform ease var(--animation-duration);
+}
+
+/* Button */
+
+.shop_btn {
+  background-color: transparent;
+  margin-right: var(--space);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform ease var(--animation-duration);
+}
+
+.shop_logo:hover,
+.shop_btn:hover {
+  transform: scale(1.1);
+}
+
+.imgBtn {
+  display: flex;
+  align-items: center;
+}
+
+.shop_btn .clothesBtn {
+  width: var(--button-size);
+  height: var(--button-size);
+}
+
+.shop_btn.colorBtn {
+  font-size: var(--font-size);
+  padding: calc(var(--space) * 2);
+  border-radius: var(--border-radius);
+}
+
+.shop_btn.colorBtn.yellow {
+  background-color: var(--color-yellow);
+}
+
+.shop_btn.colorBtn.pink {
+  background-color: var(--color-pink);
+}
+
+.shop_btn.colorBtn.blue {
+  background-color: var(--color-blue);
+}
+
+/* Items */
+
+.shop_items {
+  width: 70%;
+  height: 70%;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
+}
+
+.shop_items .item {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray);
+  padding: var(--space);
+  margin-bottom: var(--space);
+}
+
+.shop_items .item .item_image {
+  width: var(--item-size);
+  height: var(--item-size);
+}
+
+.shop_items .item .item_contents {
+  margin-left: var(--space);
+  font-size: var(--font-size);
+}

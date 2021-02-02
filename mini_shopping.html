@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/mini_shopping.css">
+  <script src="javascript/mini_shopping.js" defer></script>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="image/shopping/shop_open.png" alt="shopping logo" class="shop_logo"/>
+
+  <!-- Button -->
+  <div class="imgBtn">
+    <button class="shop_btn">
+      <img src="image/shopping/shop_shirt.png" alt="shirt" class="clothesBtn" data-key="type", data-value="shirt"/>
+    </button>
+    <button class="shop_btn">
+      <img src="image/shopping/shop_pants.png" alt="pants" class="clothesBtn" data-key="type", data-value="pants"/>
+    </button>
+    <button class="shop_btn">
+      <img src="image/shopping/shop_skirt.png" alt="skirt" class="clothesBtn" data-key="type", data-value="skirt"/>
+    </button>
+    <button class="shop_btn colorBtn yellow" data-key="color", data-value="yellow">Yellow</button>
+    <button class="shop_btn colorBtn pink" data-key="color", data-value="pink">Pink</button>
+    <button class="shop_btn colorBtn blue" data-key="color", data-value="blue">Blue</button>
+  </div>
+
+  <!-- Items -->
+  <ul class="shop_items"></ul>
+</body>
+</html>
